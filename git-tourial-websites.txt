@@ -1,0 +1,20 @@
+http://my.eoe.cn/curious/archive/3563.html
+
+#git errors
+上面出现的 [branch "master"]是需要明确(.git/config)如下的内容
+[branch "master"]
+    remote = origin
+
+        merge = refs/heads/master
+        这等于告诉git2件事:
+
+        1，当你处于master branch, 默认的remote就是origin。
+        2，当你在master branch上使用git pull时，没有指定remote和branch，那么git就会采用默认的remote（也就是origin）来merge在master branch上所有的改变
+
+        如果不想或者不会编辑config文件的话，可以在bush上输入如下命令行：
+
+            $ git config branch.master.remote origin  
+                $ git config branch.master.merge refs/heads/master  
+
+                之后再重新git pull下。最后git push你的代码吧。it works now~
+
