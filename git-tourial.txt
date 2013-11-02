@@ -1,0 +1,19 @@
+
+#
+git config --global user.name 'ranhui'
+git config --global user.email ranhui@git.com
+
+#set alias name for all users, status,commit,checkout,branch
+git config --system alias.st status
+
+#set alias name for current user
+
+git config --global alias.st status
+
+#turn on color display
+git config --global color.ui true
+
+#init 
+
+git init my-git-project-dir
+
