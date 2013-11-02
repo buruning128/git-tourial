@@ -17,3 +17,22 @@ git config --global color.ui true
 
 git init my-git-project-dir
 
+#search
+git grep "something"
+
+#strace
+strace -e 'trace=file' git status
+
+#git 
+git rev-parse --git-dir
+git rev-parse --show-toplevel
+git rev-parse --show-prefix
+git rev-paese --show-cdup
+
+#gitconfig
+git config -e
+git config -e --global
+git config -e --system
+
+
+
