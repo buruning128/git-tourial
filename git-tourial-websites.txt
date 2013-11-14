@@ -18,3 +18,6 @@ http://my.eoe.cn/curious/archive/3563.html
 
                 之后再重新git pull下。最后git push你的代码吧。it works now~
 
+
+http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/
+
